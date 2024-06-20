@@ -51,7 +51,9 @@ To run the Ethics Classifier locally, follow these steps:
    git clone https://github.com/SathwikLokam/Ethical-Sentence-Evaluator/
    cd Ethical-Sentence-Evaluator
 2. Run the application
+   ```bash
    cd /Ethical-Sentence-Evaluator/
    ./Scripts/activate
+   pip install -r requirements.txt
    python -m app.py
    
