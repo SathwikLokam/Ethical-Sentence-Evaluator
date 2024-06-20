@@ -1,72 +1,57 @@
-<!-- templates/introduction.html -->
+# Ethics Classifier
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Ethics Classifier</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f0f0f0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333333;
-        }
-        p {
-            line-height: 1.6;
-            color: #666666;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #007bff;
-        }
-        .features {
-            margin-top: 20px;
-        }
-        .features h3 {
-            color: #333333;
-        }
-        .features ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            color: #666666;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Introduction to Ethics Classifier</h1>
-        <p>Welcome to the Ethics Classifier application!</p>
-        
-        <div class="features">
-            <h3>How It Works:</h3>
-            <p>The Ethics Classifier is built using several key technologies and methodologies:</p>
-            <ul>
-                <li><span class="highlight">Python Flask Framework:</span> A micro web framework used to develop web applications in Python, providing routing, template rendering, and more.</li>
-                <li><span class="highlight">Pandas:</span> A powerful data analysis and manipulation library for Python, utilized here to load and preprocess the dataset.</li>
-                <li><span class="highlight">Scikit-learn (sklearn):</span> A machine learning library in Python that includes various algorithms for classification, regression, clustering, and more.</li>
-                <li><span class="highlight">Logistic Regression:</span> A statistical model used for binary classification tasks, trained on a labeled dataset of statements to predict their ethicality.</li>
-                <li><span class="highlight">TF-IDF Vectorization:</span> Term Frequency-Inverse Document Frequency is used to convert textual data into numerical features, capturing the importance of words in the statements.</li>
-                <li><span class="highlight">HTML and CSS:</span> Front-end technologies used to create a user-friendly interface for inputting statements and displaying prediction results.</li>
-            </ul>
-        </div>
-        
-        <p>The application allows users to input a statement and predicts whether it is <span class="highlight">ethical</span> or <span class="highlight">unethical</span> based on its content.</p>
-        
-        <p>Explore the various functionalities and enjoy using the Ethics Classifier!</p>
-    </div>
-</body>
-</html>
+Welcome to Ethics Classifier, an application that predicts whether a given statement is ethical or unethical based on its textual content. This repository contains the source code for the application built using Python, Flask, and Scikit-learn.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [How It Works](#how-it-works)
+- [Setup Instructions](#setup-instructions)
+- [Usage](#usage)
+- [License](#license)
+
+## Introduction
+
+Ethics Classifier uses a machine learning model based on logistic regression to classify statements as ethical or unethical. The model is trained on a dataset of labeled statements, leveraging TF-IDF vectorization for feature extraction and logistic regression for classification.
+
+The application provides a simple web interface where users can input a statement, and the model predicts its ethicality. It's built with Python Flask for backend development and incorporates HTML and CSS for the frontend.
+
+## Technologies Used
+
+- **Python**: Programming language used for backend logic and machine learning model development.
+- **Flask**: Micro web framework for Python used to build the web application and handle HTTP requests.
+- **Pandas**: Python library for data manipulation and analysis, used here to preprocess the dataset.
+- **Scikit-learn (sklearn)**: Python library for machine learning tasks, including logistic regression for classification and TF-IDF vectorization.
+- **HTML/CSS**: Frontend technologies used to create the user interface for inputting statements and displaying prediction results.
+
+## How It Works
+
+1. **Dataset Loading and Preprocessing**:
+   - The dataset (`alp.csv`) is loaded using Pandas, which contains statements labeled with their ethicality.
+   - Text preprocessing steps (lowercasing, removal of punctuation, etc.) are assumed to have been applied beforehand.
+
+2. **Feature Extraction**:
+   - TF-IDF Vectorization is used to convert textual data into numerical features, capturing the importance of words in the statements.
+
+3. **Model Training**:
+   - The logistic regression model is trained on the TF-IDF transformed dataset to predict whether a statement is ethical (1) or unethical (0).
+
+4. **Web Application**:
+   - Flask is used to create the web application.
+   - Users can access the application through a browser.
+   - They can input a statement via a form, and upon submission, the model predicts its ethicality.
+   - Results are displayed on a results page, indicating whether the statement is classified as ethical or unethical.
+
+## Setup Instructions
+
+To run the Ethics Classifier locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SathwikLokam/Ethical-Sentence-Evaluator/
+   cd Ethical-Sentence-Evaluator
+2. Run the application
+   cd /Ethical-Sentence-Evaluator/
+   ./Scripts/activate
+   python -m app.py
+   
