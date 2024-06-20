@@ -1,4 +1,4 @@
-# Ethics Classifier
+# Ethical Sentence Evaluator
 
 Welcome to Ethics Classifier, an application that predicts whether a given statement is ethical or unethical based on its textual content. This repository contains the source code for the application built using Python, Flask, and Scikit-learn.
 
@@ -10,7 +10,7 @@ Welcome to Ethics Classifier, an application that predicts whether a given state
 
 ## Introduction
 
-Ethics Classifier uses a machine learning model based on logistic regression to classify statements as ethical or unethical. The model is trained on a dataset of labeled statements, leveraging TF-IDF vectorization for feature extraction and logistic regression for classification.
+Ethical Sentence Evaluator uses a machine learning model based on logistic regression to classify statements as ethical or unethical. The model is trained on a dataset of labeled statements, leveraging TF-IDF vectorization for feature extraction and logistic regression for classification.
 
 The application provides a simple web interface where users can input a statement, and the model predicts its ethicality. It's built with Python Flask for backend development and incorporates HTML and CSS for the frontend.
 
@@ -42,7 +42,7 @@ The application provides a simple web interface where users can input a statemen
 
 ## Setup Instructions
 
-To run the Ethics Classifier locally, follow these steps:
+To run the Ethical Sentence Evaluator locally, follow these steps:
 
 1. Clone the repository:
    ```bash
