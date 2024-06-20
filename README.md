@@ -7,8 +7,6 @@ Welcome to Ethics Classifier, an application that predicts whether a given state
 - [Technologies Used](#technologies-used)
 - [How It Works](#how-it-works)
 - [Setup Instructions](#setup-instructions)
-- [Usage](#usage)
-- [License](#license)
 
 ## Introduction
 
